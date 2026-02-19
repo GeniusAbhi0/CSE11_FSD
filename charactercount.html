@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea  id="msg" onkeyup="charactercount()"></textarea>
+    
+    <p id="count">
+
+    </p>
+    <script>
+        function charactercount(){
+            let msg=document.getElementById("msg").value;
+            let count=document.getElementById("count");
+            count.innerHTML = "Character Count: " + msg.length;
+
+        }
+    </script>
+</body>
+</html>
